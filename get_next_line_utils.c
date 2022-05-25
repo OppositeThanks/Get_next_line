@@ -6,7 +6,7 @@
 /*   By: lperrin <lperrin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:25:37 by lperrin           #+#    #+#             */
-/*   Updated: 2022/05/23 11:21:18 by lperrin          ###   ########.fr       */
+/*   Updated: 2022/05/23 12:30:29 by lperrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_strchr(char *str, int n)
 		return (0);
 	if (n == '\0')
 		return ((char *)&str[ft_strlen(str)]);
-	/* (char *)&str[ft_strlen(str)] ou just str ??? */
 	while (str[i] != '\0')
 	{
 		if (str[i] == (char)n)
